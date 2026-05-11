@@ -75,12 +75,12 @@
 }
 
 .gmso-duration-host {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+  display: block;
 }
 
 .gmso-adjusted-eta {
+  display: block;
+  margin-top: 2px;
   font-size: 11px;
   color: #0b8043;
   white-space: nowrap;
