@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Google Maps Speed Offset ETA",
+  "version": "0.1.0",
+  "description": "Adds 0/+5/+10/+15 and custom MPH ETA estimates to Google Maps routes.",
+  "host_permissions": ["https://www.google.com/maps/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.google.com/maps/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_title": "Speed Offset ETA",
+    "default_popup": "popup.html"
+  }
+}
